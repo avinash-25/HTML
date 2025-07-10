@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Notes</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on">
+        <label for="fullName">Name :<sup style="color: red;">*</sup></label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" autofocus maxlength="16"><br><br>
+
+        <label for="email">Email :<sup style="color: red;">*</sup></label>
+        <input type="email" id="email" name="email" placeholder="xyz@gmail.com"><br><br>
+
+        <label for="mobile">Mobile :<sup style="color: red;">*</sup></label>
+        <input type="tel" id="mobile" name="mobile" required placeholder="+919999999999"><br><br>
+
+        <label>College Name :</label>
+        <input type="text" value="GGSIP University" disabled><br><br>
+
+        <label>Principal Name :</label>
+        <input type="text" value="RD Sharma" readonly><br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit">Login</button>
+        <button type="reset">Cancel</button>
+
+        <hr>
+        <h3>📚 Class Notes</h3>
+
+        <h4>🔸 Form in HTML</h4>
+        <ul>
+            <li>Forms are used to accept input from the user.</li>
+            <li>To create a form, we use the <code>&lt;form&gt;&lt;/form&gt;</code> tag.</li>
+            <li>To create input fields, we use the <code>&lt;input&gt;</code> tag, which is an unpaired tag.</li>
+            <li>The <code>&lt;input&gt;</code> tag must be written inside the <code>&lt;form&gt;</code> tag.</li>
+        </ul>
+
+        <h4>🔸 Input Tag Attributes</h4>
+        <ul>
+            <li><strong>type</strong> — Specifies the kind of data to input (e.g., text, email, password, etc.)</li>
+            <li><strong>name</strong> — Sends the input field name to the server during form submission.</li>
+            <li><strong>value</strong> — Specifies the default value of the input field.</li>
+            <li><strong>disabled</strong> — Disables the input field; users cannot interact or change its value.</li>
+            <li><strong>readonly</strong> — Makes the input field read-only; users can see the value but can't edit.</li>
+            <li><strong>required</strong> — Makes the field mandatory. The form won’t submit without it.</li>
+            <li><strong>placeholder</strong> — Displays a hint inside the field to guide the user.</li>
+            <li><strong>autofocus</strong> — Automatically focuses this field on page load.</li>
+            <li><strong>maxlength</strong> — Sets the maximum number of characters allowed.</li>
+            <li><strong>minlength</strong> — Sets the minimum number of characters required.</li>
+            <li><strong>autocomplete</strong> — Enables or disables auto-completion. Accepts <code>on</code> or <code>off</code>.</li>
+        </ul>
+
+        <h4>🔸 Common <code>type</code> values for &lt;input&gt;</h4>
+        <ul>
+            <li>text</li>
+            <li>email</li>
+            <li>tel</li>
+            <li>password</li>
+            <li>number</li>
+            <li>radio</li>
+            <li>checkbox</li>
+            <li>date</li>
+            <li>time</li>
+            <li>datetime-local</li>
+            <li>month</li>
+            <li>week</li>
+            <li>file</li>
+            <li>color</li>
+            <li>range</li>
+            <li>search</li>
+            <li>url</li>
+            <li>image</li>
+            <li>submit</li>
+            <li>reset</li>
+            <li>button</li>
+        </ul>
+
+        <h4>🔸 Label Tag</h4>
+        <ul>
+            <li>The <code>&lt;label&gt;</code> tag is used to define a label for an input element.</li>
+            <li>It helps improve form accessibility and connects text with the input field.</li>
+            <li>The <code>for</code> attribute of <code>&lt;label&gt;</code> must match the <code>id</code> of the input field.</li>
+        </ul>
+        <pre><code>
+<label for="user-name">Name:</label>
+<input type="text" id="user-name">
+        </code></pre>
+
+        <h4>🔸 Additional Notes</h4>
+        <ul>
+            <li>Server has CPU and memory to store and process form data.</li>
+            <li>Client and server communicate using URLs.</li>
+            <li>Form data is sent to the server using the <strong>name</strong> attribute of each input field.</li>
+            <li>When using <code>method="get"</code>, the data is sent via URL with <code>?</code> used to separate values.</li>
+            <li>To keep sensitive data secure (like passwords), use <code>method="post"</code>.</li>
+            <li><strong>Value</strong> vs <strong>Placeholder</strong>:
+                <ul>
+                    <li><strong>Value</strong> shows permanent default content in the input.</li>
+                    <li><strong>Placeholder</strong> gives a hint which disappears on typing.</li>
+                </ul>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

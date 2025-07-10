@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivSpan, ID/Class</title>
+
+    <style>
+        span{
+            background-color: orange;
+            width: 50%;
+
+        }
+
+        div{
+            background-color: red;
+        }
+    </style>
+ 
+
+
+</head>
+<body>
+    <h2>Class Notes - HTML Elements and Tags</h2>
+
+<hr>
+<h3>🔹 1. Block vs Inline Elements</h3>
+<ul>
+    <li><strong>Block-level elements:</strong> Occupy full width, start on a new line.</li>
+    <li><strong>Inline elements:</strong> Take only as much width as needed, do not start on a new line.</li>
+</ul>
+
+<h4>Examples of Block Elements:</h4>
+<ul>
+    <li>&lt;div&gt;, &lt;p&gt;, &lt;section&gt;, &lt;article&gt;, &lt;table&gt;, &lt;form&gt;, &lt;header&gt;, &lt;footer&gt;</li>
+</ul>
+
+<h4>Examples of Inline Elements:</h4>
+<ul>
+    <li>&lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;img&gt;, &lt;mark&gt;, &lt;sub&gt;, &lt;sup&gt;</li>
+</ul>
+
+---
+
+<h3>🔹 2. ID vs Class</h3>
+
+<h4>ID [#]</h4>
+<ul>
+    <li>Used to uniquely identify an element.</li>
+    <li>No two elements should have the same ID.</li>
+    <li>One element can have only one ID.</li>
+    <li>To select an ID in CSS: <code>#idName</code></li>
+    <li><strong>Invalid:</strong> <code>id="id1 id2"</code> – multiple IDs not allowed</li>
+    <li>Example: <code>&lt;p id="ptag"&gt;Paragraph&lt;/p&gt;</code></li>
+</ul>
+
+<h4>Class [.]</h4>
+<ul>
+    <li>Used to apply styles to multiple elements.</li>
+    <li>Multiple elements can share the same class.</li>
+    <li>One element can have multiple classes.</li>
+    <li>To select a class in CSS: <code>.className</code></li>
+    <li><strong>Valid:</strong> <code>class="btn primary highlight"</code></li>
+    <li>Example: <code>&lt;p class="ptag"&gt;Paragraph&lt;/p&gt;</code></li>
+</ul>
+
+---
+
+<h3>🔹 3. Formatting Tags (Inline)</h3>
+
+<ul>
+    <li><code>&lt;strong&gt;</code>: Bold text (semantic)</li>
+    <li><code>&lt;em&gt;</code>: Italic text (semantic)</li>
+    <li><code>&lt;mark&gt;</code>: Highlighted text</li>
+    <li><code>&lt;ins&gt;</code>: Inserted/underlined text</li>
+    <li><code>&lt;sub&gt;</code>: Subscript (e.g., H<sub>2</sub>O)</li>
+    <li><code>&lt;sup&gt;</code>: Superscript (e.g., x<sup>2</sup>)</li>
+</ul>
+
+---
+
+<h3>🔹 4. Deprecated Tags (Avoid in Modern HTML)</h3>
+<ul>
+    <li><code>&lt;strike&gt;</code>: Strikethrough text → use <code>&lt;del&gt;</code></li>
+    <li><code>&lt;center&gt;</code>: Centering text → use CSS <code>text-align: center</code></li>
+    <li><code>&lt;b&gt;</code>: Bold → prefer <code>&lt;strong&gt;</code></li>
+    <li><code>&lt;i&gt;</code>: Italics → prefer <code>&lt;em&gt;</code></li>
+</ul>
+
+---
+
+<h3>🔹 5. Tooltip (title attribute)</h3>
+<ul>
+    <li>Use <code>title</code> to show tooltip on hover</li>
+    <li>Example: <code>&lt;p title="I am tooltip"&gt;Hover me&lt;/p&gt;</code></li>
+</ul>
+
+---
+
+<h3>🔹 6. Practical Examples</h3>
+
+<h4>Div (Block):</h4>
+<pre>
+&lt;div&gt;I am div tag&lt;/div&gt;
+</pre>
+<p>→ Covers full width, starts on a new line, acts as a container.</p>
+
+<h4>Span (Inline):</h4>
+<pre>
+&lt;span&gt;I am span tag&lt;/span&gt;
+</pre>
+<p>→ Takes only required space, stays in line.</p>
+
+---
+
+<h3>🔹 7. Block-level Elements List</h3>
+<ul>
+    <li>&lt;div&gt;, &lt;p&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;table&gt;, &lt;form&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;</li>
+</ul>
+
+<h3>🔹 8. Inline-level Elements List</h3>
+<ul>
+    <li>&lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;mark&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;img&gt;, &lt;input&gt;, &lt;label&gt;</li>
+</ul>
+
+---
+
+<h3>🔹 9. Miscellaneous Elements</h3>
+
+<h4>Headings:</h4>
+<pre>
+&lt;h1&gt; to &lt;h6&gt; – Headings with decreasing size
+</pre>
+
+<h4>Paragraph & Pre:</h4>
+<pre>
+&lt;p&gt; – Regular paragraph
+&lt;pre&gt; – Preserves whitespace and formatting
+</pre>
+
+---
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Tag</title>
+
+    <style>
+      img {
+        height: 300px;
+        width: 300px;
+
+        opacity: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img
+      src="./Assests/Image/flower.png"
+      title="Lovely Image of flower best for couple"
+      alt="flower Image"
+    />
+    <img
+      src="./Assests/Image/isro.png"
+      title="Mangalyan is going to launch"
+      alt="Isro image"
+    />
+    <img
+      src="./Assests/Image/leetcode.png"
+      title="This is the 100 Days batch of leetcode"
+      alt="Leetcode Image"
+    />
+    <img src="./Assests/Image/room.png" title="Messy room image" alt="room image" />
+    <img
+      src="./Assests/Image/agile.png"
+      title="Definition of the devops and you can also understand."
+      alt="agile image"
+    /> -->
+
+
+    <h3>🔹 Image Tag Notes</h3>
+
+<ul>
+    <li><strong>&lt;img&gt;</strong> tag is used to display images on a webpage.</li>
+    <li>This is a self-closing and inline tag (does not need a closing tag).</li>
+
+    <h4>🔸 Syntax:</h4>
+    <pre>
+&lt;img src="image.jpg" alt="Description" width="300" height="200"&gt;
+    </pre>
+
+    <h4>🔸 Important Attributes:</h4>
+    <ul>
+        <li><strong>src:</strong> (source) URL or file path of the image (required).</li>
+        <li><strong>alt:</strong> (alternate text) describes the image if it doesn't load or for screen readers (required for accessibility).</li>
+        <li><strong>width / height:</strong> Defines the size of the image (in px or %).</li>
+        <li><strong>title:</strong> Tooltip text shown on hover.</li>
+        <li><strong>loading:</strong> Accepts <code>"lazy"</code> to delay loading until the image is in view (improves performance).</li>
+    </ul>
+
+    <h4>🔸 Types of Image Sources:</h4>
+    <ul>
+        <li><strong>Relative Path:</strong> Image is in the same project folder.
+            <br>Example: <code>src="images/pic.jpg"</code>
+        </li>
+        <li><strong>Absolute Path:</strong> Full URL of the image.
+            <br>Example: <code>src="https://example.com/logo.png"</code>
+        </li>
+    </ul>
+
+    <h4>🔸 Example 1: Basic Image</h4>
+    <pre>
+&lt;img src="pic.jpg" alt="Nature image" width="300" height="200"&gt;
+    </pre>
+
+    <h4>🔸 Example 2: With Tooltip</h4>
+    <pre>
+&lt;img src="pic.jpg" alt="Lake view" title="Hover text - Lake view"&gt;
+    </pre>
+
+    <h4>🔸 Example 3: Lazy Loading</h4>
+    <pre>
+&lt;img src="pic.jpg" alt="Lazy load image" loading="lazy"&gt;
+    </pre>
+
+    <h4>🔸 Notes:</h4>
+    <ul>
+        <li>Always use <code>alt</code> for better SEO and accessibility.</li>
+        <li>Use compressed images for faster loading.</li>
+        <li>Prefer relative paths for local projects.</li>
+        <li>Use <code>loading="lazy"</code> to improve webpage performance.</li>
+    </ul>
+</ul>
+
+
+
+
+  </body>
+</html>

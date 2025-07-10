@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="http://www.wikipedia.org/" frameborder="3" width="200px" height="300px" ></iframe>
+    <br><br>
+    <iframe src="http://www.excalidraw.com/" frameborder="1" width="300px" height="200px" ></iframe>
+
+    <h3>Notes for mock of iframe tag</h3>
+<ul>
+    <li>The &lt;iframe&gt; tag is used to embed another HTML page or website inside the current webpage.</li>
+    <li>By using this, we can show external websites, PDFs, videos, maps, etc., on our website.</li>
+    <li>Basic syntax: &lt;iframe src="URL" width="..." height="..."&gt;&lt;/iframe&gt;</li>
+    <li>Important attributes: 
+        <ul>
+            <li><strong>src:</strong> URL of the webpage to embed</li>
+            <li><strong>width / height:</strong> size of the iframe</li>
+            <li><strong>frameborder:</strong> 0 or 1 (to show/hide border)</li>
+            <li><strong>allowfullscreen:</strong> allows fullscreen content (like videos)</li>
+            <li><strong>loading="lazy":</strong> improves performance by delaying load</li>
+            <li><strong>title:</strong> improves accessibility (important for screen readers)</li>
+            <li><strong>name:</strong> gives a name to iframe (used with target)</li>
+            <li><strong>sandbox:</strong> adds extra security restrictions on iframe content</li>
+        </ul>
+    </li>
+    <li>Some commercial websites like Google, YouTube, Facebook, etc., can't be embedded because they block it using security headers like <code>X-Frame-Options</code> or <code>Content-Security-Policy</code>.</li>
+    <li>To overcome this block, we cannot force embedding. CORS (Cross-Origin Resource Sharing) helps in some API-level cases, but not for embedding full websites.</li>
+    <li>Use <code>sandbox</code> attribute to restrict iframe content (e.g., block scripts or forms).</li>
+    <li>Use <code>loading="lazy"</code> to delay iframe loading until it comes into view (better performance).</li>
+    <li>Iframes can be used to embed YouTube videos, Google Maps, code editors, live previews, etc.</li>
+    <li>Security Tip: Don’t embed untrusted sources in iframe without sandbox — it can cause clickjacking or malicious behavior.</li>
+</ul>
+
+
+</body>
+</html>

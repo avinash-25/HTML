@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3" rules ="all" cellpadding = "10px">
+        <caption style="color: brown; font-weight: bold; margin-bottom: 5px; " >Course Duration</caption>
+        <th style="color: blueviolet;" >S.no</th>
+        <th style="color: blueviolet;" >Subject</th>
+        <th style="color: blueviolet;" >Days</th>
+       
+        <tr align="center" >
+            <td>1</td>
+            <td>java</td>
+            <td>90</td>
+        </tr>
+        
+        <tr align="center" >
+            <td>2</td>
+            <td>Web</td>
+            <td>90</td>
+        </tr>
+
+        <tr align="center" >
+            <td>3</td>
+            <td>SQL</td>
+            <td>30</td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">Total Days :-</td>
+            <td>210</td>
+        </tr>
+        
+
+    </table>
+
+   <h1>Theory For MOCK</h1>
+
+<p>1. A <strong>table</strong> is a collection of rows and columns used to display data in a structured format.</p>
+
+<p>2. To create a table in HTML, we use the <code>&lt;table&gt;&lt;/table&gt;</code> tag.</p>
+
+<p>3. A table is created row by row. For each row, we use the <code>&lt;tr&gt;&lt;/tr&gt;</code> (table row) tag.</p>
+
+<p>4. Inside each row, we add cells using two types of tags:</p>
+<ul>
+  <li><code>&lt;th&gt;&lt;/th&gt;</code> tag: Used for table headers (bold and centered by default)</li>
+  <li><code>&lt;td&gt;&lt;/td&gt;</code> tag: Used for table data (normal cells)</li>
+</ul>
+
+<p>5. To add a title or label to the table, we use the <code>&lt;caption&gt;&lt;/caption&gt;</code> tag. It should be written immediately after the opening <code>&lt;table&gt;</code> tag.</p>
+
+<p>6. We can divide a table into three parts using semantic tags for better structure:</p>
+<ul>
+  <li><code>&lt;thead&gt;&lt;/thead&gt;</code> – Defines the table header section</li>
+  <li><code>&lt;tbody&gt;&lt;/tbody&gt;</code> – Defines the main body of the table</li>
+  <li><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> – Defines the footer section of the table</li>
+</ul>
+
+<h4>Importance of <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> tags:</h4>
+<p>They are not mandatory but highly recommended for:</p>
+<ul>
+  <li>Improved code readability</li>
+  <li>Better styling with CSS</li>
+  <li>Helpful for search engines and accessibility tools (like screen readers)</li>
+</ul>
+
+<h4>Additional Important Table Tags and Attributes:</h4>
+
+<p><strong>1. <code>colspan</code> attribute:</strong> Used in <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> to merge multiple columns into one.</p>
+<p>Example:</p>
+<pre><code>&lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;</code></pre>
+
+<p><strong>2. <code>rowspan</code> attribute:</strong> Used in <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> to merge multiple rows into one.</p>
+<p>Example:</p>
+<pre><code>&lt;td rowspan="2"&gt;Merged Cell&lt;/td&gt;</code></pre>
+
+<p><strong>3. <code>border</code> attribute:</strong> Used in the <code>&lt;table&gt;</code> tag to define the border size. However, using CSS is preferred.</p>
+<p>Example:</p>
+<pre><code>&lt;table border="1"&gt;...&lt;/table&gt;</code></pre>
+
+<h4>Note:</h4>
+<ul>
+  <li>Tables should always be used for tabular data, not for layout purposes.</li>
+  <li>Use CSS for styling tables instead of old HTML attributes like `border`, `cellspacing`, and `cellpadding`.</li>
+</ul>
+
+
+</body>
+</html>

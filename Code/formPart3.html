@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+      <fieldset style="width: 300px; height: auto;">
+        <legend>
+            <b>Login form</b>
+        </legend>
+
+        <label for="input1">Name :</label>
+        <input type="text" id="input1"><br><br>
+
+        <label for="input2">Email :</label>
+        <input type="email" id="input2"><br><br>
+
+        <label for="input3">Password :</label>
+        <input type="password" id="input3"><br><br>
+
+        <button type="submit" >Login</button>
+        <button type="reset" >Cancel</button>
+
+      </fieldset><br>
+    </form>
+
+    <label for="Select">Select Name of your State </label>
+      <select name="stateName" id="">
+
+        <option value="" disabled selected >--Select State Name--</option> 
+        <option value="Bihar">Bihar</option>
+        <option value="Utter Pradesh">Utter Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Kerlam">Kerlam</option>
+        <option value="Odisha">Odisha</option>
+        <option value="West Bengal">West Bengal</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      </select>
+
+      <input type="text" placeholder="Enter you state Name" list="any">
+      <datalist id="any">
+       <option value="Bihar">Bihar</option>
+        <option value="Utter Pradesh">Utter Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Kerlam">Kerlam</option>
+        <option value="Odisha">Odisha</option>
+        <option value="West Bengal">West Bengal</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      </datalist>
+    <br><br>
+    <h2>Class Notes</h2>
+    <ul>
+        <li>Fieldset tag : It creates the boundry around form tag. this tag we have to write within form tag</li>
+        <li>Legend Tag : To provide title to the form we use legend tag. Legend tag we have to write within fieldset tag.</li>
+        <li>select Tag : select tag is uded to create dropdown list. Here we are providing multiple option to the user form these option user can select only one value. To create inside dropdown list we use option tag.</li>
+        <li>Datalist or auto complete list or suggesttion list :</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioVideoTag</title>
+</head>
+<body>
+    <audio controls muted loop autoplay>
+        <source src="Audio/song1.mp3" >
+    </audio>
+<br><br>
+    <video controls loop autoplay muted height="300px" width="500px" >
+        <!-- poster="video/poster.png" -->
+        <source src="video/SHE S01 E01.mkv" >
+        
+    </video>
+    
+    <h2>Class Notes of audio and video tag</h2>
+<ul>
+    <h3>Audio Tag Notes</h3>
+    <li>The &lt;audio&gt; tag is used to embed sound or music files in a webpage.</li>
+    <li>Don't use the <code>src</code> attribute directly inside &lt;audio&gt;. Instead, use multiple &lt;source&gt; tags for better browser support.</li>
+    <li>Using multiple &lt;source&gt; tags helps support different audio formats like MP3, OGG, WAV for compatibility across all devices.</li>
+    <li>Use the <code>controls</code> attribute to display default play, pause, volume, etc. controls.</li>
+    <li>Common audio formats:
+        <ul>
+            <li><strong>MP3:</strong> Most widely supported</li>
+            <li><strong>OGG:</strong> Open format, supported in Firefox, Chrome</li>
+            <li><strong>WAV:</strong> Uncompressed, large file size</li>
+        </ul>
+    </li>
+    <li><code>autoplay</code> attribute can be used to play audio automatically when the page loads (not supported in all modern browsers due to user experience rules).</li>
+    <li><code>loop</code> attribute is used to repeat the audio again and again.</li>
+    <li><code>muted</code> starts audio in mute mode (especially useful with autoplay).</li>
+    <li>Best practice: Always use &lt;source&gt; tags inside &lt;audio&gt; for cross-browser compatibility.</li>
+    <li>Example:
+        <pre>
+&lt;audio controls&gt;
+    &lt;source src="song.mp3" type="audio/mpeg"&gt;
+    &lt;source src="song.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio tag.
+&lt;/audio&gt;
+        </pre>
+    </li>
+
+    <h3>Video Tag Notes</h3>
+    <li>The &lt;video&gt; tag is used to embed video files on a webpage.</li>
+    <li>Just like audio, it's better to use multiple &lt;source&gt; tags for supporting different video formats.</li>
+    <li>Supported video formats:
+        <ul>
+            <li><strong>MP4:</strong> Most widely supported (H.264)</li>
+            <li><strong>WebM:</strong> Open format (Chrome, Firefox)</li>
+            <li><strong>OGG:</strong> Limited support</li>
+        </ul>
+    </li>
+    <li>Use the <code>controls</code> attribute to display play/pause buttons and volume controls.</li>
+    <li><code>autoplay</code> starts playing video automatically. Often used with <code>muted</code> to prevent blocking.</li>
+    <li><code>loop</code> makes the video play continuously in a loop.</li>
+    <li><code>muted</code> starts video in mute mode. Useful with autoplay.</li>
+    <li><code>poster</code> is used to show a thumbnail image before the video plays.</li>
+    <li><strong>Important:</strong> You cannot use <code>poster</code> and <code>autoplay</code> together effectively. If autoplay is set, the poster image might not appear.</li>
+    <li><code>preload</code> attribute controls how much of the video is loaded before playback:
+        <ul>
+            <li><code>auto</code>: browser decides</li>
+            <li><code>metadata</code>: only metadata is loaded</li>
+            <li><code>none</code>: nothing is loaded until user clicks play</li>
+        </ul>
+    </li>
+    <li>Example:
+        <pre>
+&lt;video width="320" height="240" controls poster="thumbnail.jpg"&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.webm" type="video/webm"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+        </pre>
+    </li>
+</ul>
+
+
+</body>
+</html>

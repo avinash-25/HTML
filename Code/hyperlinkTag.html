@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperlink Tag</title>
+  </head>
+  <body>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+
+    <img
+      src="./Assests/Image/agile2.png"
+      height="300px"
+      width="500px"
+      alt="Agile Image"
+    />
+
+    <h3>Class Notes</h3>
+    <ol>
+      <li>
+        <p>
+          <strong>Anchor Tag (Hyperlink):</strong> Used to create clickable
+          links in HTML.
+        </p>
+        <ul>
+          <li>Syntax: <code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code></li>
+          <li>
+            <code>href</code>: Specifies the destination URL (required
+            attribute).
+          </li>
+          <li>
+            Can link to:
+            <ul>
+              <li>External websites (e.g., https://google.com)</li>
+              <li>Internal pages (e.g., about.html)</li>
+              <li>Page sections using ID (e.g., #contact)</li>
+              <li>Email using <code>mailto:</code></li>
+              <li>Phone number using <code>tel:</code></li>
+              <li>PDFs, docs, images, downloads, etc.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p>
+          <strong>target attribute</strong> – Controls where the linked document
+          opens:
+        </p>
+        <ul>
+          <li><code>_blank</code>: Opens link in a new tab or window.</li>
+          <li>
+            <code>_self</code>: Opens link in the same tab (default behavior).
+          </li>
+          <li>
+            <code>_parent</code>: Opens in parent frame (for nested frames).
+          </li>
+          <li>
+            <code>_top</code>: Opens link in the full body of the window (breaks
+            out of frames).
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Stages of Anchor Tag (Link Colors):</strong></p>
+        <ul>
+          <li>
+            <span style="color: skyblue">Sky Blue</span>: Not visited link
+            (default color for unvisited links).
+          </li>
+          <li>
+            <span style="color: red">Red</span>: Active link (while being
+            clicked).
+          </li>
+          <li>
+            <span style="color: purple">Purple</span>: Visited link (after user
+            has clicked).
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Path Reference Rules:</strong></p>
+        <ul>
+          <li>
+            <code>.</code> (Single dot): Refers to current directory.
+            Suggestions appear from same folder.
+          </li>
+          <li>
+            <code>..</code> (Double dot): Refers to parent folder. Used to go
+            back one directory level.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p>
+          <strong>Download Attribute:</strong> Used to download a file instead
+          of opening it.
+        </p>
+        <ul>
+          <li>
+            Example:
+            <code
+              >&lt;a href="file.pdf" download&gt;Download PDF&lt;/a&gt;</code
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Linking to Page Sections (ID Based Linking):</strong></p>
+        <ul>
+          <li>
+            Create an ID on the target element:
+            <code>&lt;h2 id="about"&gt;About Us&lt;/h2&gt;</code>
+          </li>
+          <li>
+            Create anchor:
+            <code>&lt;a href="#about"&gt;Go to About Section&lt;/a&gt;</code>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Email & Phone Links:</strong></p>
+        <ul>
+          <li>
+            Email:
+            <code
+              >&lt;a href="mailto:abc@example.com"&gt;Send Email&lt;/a&gt;</code
+            >
+          </li>
+          <li>
+            Phone:
+            <code>&lt;a href="tel:+919876543210"&gt;Call Us&lt;/a&gt;</code>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p>
+          <strong>Anchor tag can also be used as a button</strong> (for
+          navigation):
+        </p>
+        <ul>
+          <li>
+            You can style anchor like a button using CSS:
+            <code>&lt;a class="btn" href="#"&gt;Click Me&lt;/a&gt;</code>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Best Practices:</strong></p>
+        <ul>
+          <li>Always use <code>https://</code> for secure links.</li>
+          <li>Use descriptive link text instead of "click here".</li>
+          <li>
+            Use <code>rel="noopener noreferrer"</code> with
+            <code>target="_blank"</code> for security.
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
