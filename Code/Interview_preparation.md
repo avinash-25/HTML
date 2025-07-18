@@ -187,7 +187,7 @@ display: inline-block;
 
 ---
 
-### 13. What is the difference between <span> and <div> tag?
+### 13. What is the difference between `<span>` and `<div>` tag?
 
 * The `<span>` tag is an inline element, which means it only takes as much width as needed and stays on the same line.
 * In contrast, the `<div>` tag is a block-level element, which takes the full width and always starts from a new line.
